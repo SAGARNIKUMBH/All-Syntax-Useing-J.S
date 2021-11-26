@@ -674,13 +674,68 @@ console.log("calculateTotal: ", calculate(n));*/
 //   console.log("1st January is being a Sunday  " + year);
 // }
 
-today = new Date();
-let Christmas = new Date(today.getFullYear(), 11, 25);
-if (today.getMonth() == 11 && today.getDate() > 25) {
-  Christmas.setFullYear(Christmas.getFullYear());
+// today = new Date();
+// let Christmas = new Date(today.getFullYear(), 11, 25);
+// if (today.getMonth() == 11 && today.getDate() > 25) {
+//   Christmas.setFullYear(Christmas.getFullYear());
+// }
+// let OneDay = 1000 * 60 * 60 * 24;
+// console.log(
+//   Math.ceil((Christmas.getTime() - today.getTime()) / OneDay) +
+//     " days left until Christmas!"
+// );
+
+// let people = ["sagar", "Roshan", "Yogesh", "Gaurav", "Prasad"];
+// for (let index = 0; index < people.length; index++) {
+//   const element = people[index];
+// console.log(element);
+
+// let index = 0;
+
+// let cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// console.log(cars[index]);
+// for (index = 0; index < cars.length; index++) {
+//   let text = cars[index];
+//   // text += cars[i] + "<br> ";
+//   console.log(text);
+// }
+
+// Object = {
+//   Name: "sagar",
+//   Age: "30",
+//   Language: "javascript",
+// };
+// // console.log(Object);
+
+// // let people = ["sagar", "Roshan", "Yogesh", "Gaurav", "Prasad"];
+// for (let index = 0; index < Object.keys(Object).length; index++) {
+//   const element = Object[Object.keys(Object)[index]];
+//   console.log(Object);
+// }
+
+// const mySet = new Set();
+// console.log("set look like this :", mySet);
+
+// mySet.add("sagar");
+// mySet.add("jon");
+// mySet.add("nitin");
+// console.log("this look like myset", mySet);
+
+let mySet = new Set([1, 45, "this", false, { a: 2, b: 4 }]);
+console.log("show set:", mySet);
+console.log(mySet.size);
+console.log(mySet.values);
+console.log(mySet.has(456));
+mySet.delete(45);
+
+for (let item of mySet) {
+  console.log("item is:", item);
 }
-let OneDay = 1000 * 60 * 60 * 24;
-console.log(
-  Math.ceil((Christmas.getTime() - today.getTime()) / OneDay) +
-    " days left until Christmas!"
-);
+
+mySet.forEach((item) => {
+  console.log("Item is :", item);
+});
+
+console.log(mySet.clear());
+console.log(mySet.add(45));
+console.log(mySet.values);
