@@ -721,21 +721,114 @@ console.log("calculateTotal: ", calculate(n));*/
 // mySet.add("nitin");
 // console.log("this look like myset", mySet);
 
-let mySet = new Set([1, 45, "this", false, { a: 2, b: 4 }]);
-console.log("show set:", mySet);
-console.log(mySet.size);
-console.log(mySet.values);
-console.log(mySet.has(456));
-mySet.delete(45);
+// let mySet = new Set([1, 45, "this", false, { a: 2, b: 4 }]);
+// console.log("show set:", mySet);
+// console.log(mySet.size);
+// console.log(mySet.values);
+// console.log(mySet.has(456));
+// mySet.delete(45);
 
-for (let item of mySet) {
-  console.log("item is:", item);
+// for (let item of mySet) {
+//   console.log("item is:", item);
+// }
+
+// mySet.forEach((item) => {
+//   console.log("Item is :", item);
+// });
+
+// console.log(mySet.clear());
+// console.log(mySet.add(45));
+// console.log(mySet.values);
+
+// const sym1 = Symbol("sagar");
+// const sym2 = Symbol("jay");
+// console.log("symbol", sym1);
+
+// console.log(sym1 === sym2);
+
+// const a = "hey";
+// const b = "hello";
+
+// console.log(a === b);
+
+// myObj = {};
+// myObj["k1"] = "dell";
+// myObj["k2"] = "hp";
+// myObj["name"] = "Good Morning";
+
+// console.log(myObj);
+// console.log(myObj["k1"]);
+// console.log(myObj["name"]);
+// console.log(myObj.k1);
+// console.log(myObj.name);
+// console.log(a, b, myObj.k1, myObj.k2, myObj.name, sym1, sym2);
+
+// let a, b;
+// [a, b] = [41, 91];
+// console.log(a, b);
+
+// [a, b, c, ...d] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+// console.log(a);
+
+// console.log(b);
+// console.log);
+// console.log(d);
+
+// const d = new Date();
+// const Date = Date.toLocaleTimeString();
+
+// console.log(Date);
+
+// const date = new Date();
+// get the date as a string
+// const n = date.toDateString();
+// get the time as a string
+// const time = date.toLocaleTimeString();
+
+// log the date in the browser console
+// console.log("date:", n);
+// log the time in the browser console
+// console.log("time:", time);
+
+// setInterval(() => console.log(new Date().toLocaleTimeString()));
+
+// function time() {
+//   var d = new Date();
+//   var s = d.getSeconds();
+//   var m = d.getMinutes();
+//   var h = d.getHours();
+//   document.write(h + ":" + m + ":" + s);
+// }
+// setInterval(time, 10000);
+
+function multiplyBy() {
+  num1 = document.getElementById("1st Number").value;
+  num2 = document.getElementById("2nd Number").value;
+  document.getElementById("result").innerHTML = num1 * num2;
 }
 
-mySet.forEach((item) => {
-  console.log("Item is :", item);
-});
+function divideBy() {
+  num1 = document.getElementById("1st Number").value;
+  num2 = document.getElementById("2nd Number").value;
+  document.getElementById("result").innerHTML = num1 / num2;
+}
+function AdditionBy() {
+  num1 = document.getElementById("1st Number").value;
+  num2 = document.getElementById("2nd Number").value;
+  document.getElementById("result").innerHTML = +num1 + +num2;
+}
+function MinusBy() {
+  num1 = document.getElementById("1st Number").value;
+  num2 = document.getElementById("2nd Number").value;
+  document.getElementById("result").innerHTML = num1 - num2;
+}
 
-console.log(mySet.clear());
-console.log(mySet.add(45));
-console.log(mySet.values);
+const const_name = "zxc";
+const n = 4141;
+this[const_name] = n;
+// console.log(this[const_name]);
+
+var var_name = "abcd";
+var n = 120;
+this[var_name] = n;
+console.log(this[var_name]);

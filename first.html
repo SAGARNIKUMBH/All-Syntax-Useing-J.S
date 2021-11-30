@@ -9,17 +9,25 @@
   <body>
     This is my page
 
-    <div class="container">
+    <!-- <div class="container">
       <h1 id="heading">welcome to my webpages</h1>
       <div id="myfirst" class="child red" id="first">child 1</div>
       <div class="child">child 2</div>
       <div class="child">child 3</div>
       <div class="child">child 4</div>
-    </div>
-
-    <div class="no">this is a dummy div1</div>
-    <div class="no">this is a dummy div1</div>
-    <div class="no">this is a dummy div1</div>
-    <script src="java1.js"></script>
+    </div> -->
+    <form>
+      1st Number:<input type="text" id="1st Number" /> <br />
+      2nd Number:<input type="text" id="2nd Number" /><br /><br />
+      <input type="button" onclick="multiplyBy()" value="multiplyBy" />
+      <input type="button" onclick="divideBy()" value="divideBy" />
+      <input type="button" onclick="AdditionBy()" value="AdditionBy" />
+      <input type="button" onclick="MinusBy()" value="MinusBy" />
+    </form>
+    <p>
+      Result is :<br />
+      <span id="result"></span>
+    </p>
   </body>
+  <script src="java1.js"></script>
 </html>
