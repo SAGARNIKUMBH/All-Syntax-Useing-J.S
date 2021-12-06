@@ -801,34 +801,65 @@ console.log("calculateTotal: ", calculate(n));*/
 // }
 // setInterval(time, 10000);
 
-function multiplyBy() {
-  num1 = document.getElementById("1st Number").value;
-  num2 = document.getElementById("2nd Number").value;
-  document.getElementById("result").innerHTML = num1 * num2;
-}
+// function multiplyBy() {
+//   num1 = document.getElementById("1st Number").value;
+//   num2 = document.getElementById("2nd Number").value;
+//   document.getElementById("result").innerHTML = num1 * num2;
+// }
 
-function divideBy() {
-  num1 = document.getElementById("1st Number").value;
-  num2 = document.getElementById("2nd Number").value;
-  document.getElementById("result").innerHTML = num1 / num2;
-}
-function AdditionBy() {
-  num1 = document.getElementById("1st Number").value;
-  num2 = document.getElementById("2nd Number").value;
-  document.getElementById("result").innerHTML = +num1 + +num2;
-}
-function MinusBy() {
-  num1 = document.getElementById("1st Number").value;
-  num2 = document.getElementById("2nd Number").value;
-  document.getElementById("result").innerHTML = num1 - num2;
-}
+// function divideBy() {
+//   num1 = document.getElementById("1st Number").value;
+//   num2 = document.getElementById("2nd Number").value;
+//   document.getElementById("result").innerHTML = num1 / num2;
+// }
+// function AdditionBy() {
+//   num1 = document.getElementById("1st Number").value;
+//   num2 = document.getElementById("2nd Number").value;
+//   document.getElementById("result").innerHTML = +num1 + +num2;
+// }
+// function MinusBy() {
+//   num1 = document.getElementById("1st Number").value;
+//   num2 = document.getElementById("2nd Number").value;
+//   document.getElementById("result").innerHTML = num1 - num2;
+// }
 
-const const_name = "zxc";
-const n = 4141;
-this[const_name] = n;
-// console.log(this[const_name]);
+// const const_name = "zxc";
+// const n = 4141;
+// this[const_name] = n;
+// // console.log(this[const_name]);
 
-var var_name = "abcd";
-var n = 120;
-this[var_name] = n;
-console.log(this[var_name]);
+// var var_name = "abcd";
+// var n = 120;
+// this[var_name] = n;
+// console.log(this[var_name]);
+
+// let x = 10 + 5;
+// x += 100;
+// // x *= 5;
+// // x /= 5;
+// // x -= 10;
+
+// console.log(x);
+
+// let sonu = 2041;
+// let sagar = 2041 - 41;
+// let kanchan = 2041 - 31;
+// console.log(sonu - 41 > kanchan - 31);
+
+// function echo(name, num) {
+//   console.log("Evaluating the " + name + " side");
+//   return num;
+// }
+// // Notice the division operator (/)
+// console.log(echo("left", 6) ** echo("right", 2));
+// console.log(echo("left", 4) ** (echo("middle", 4) ** echo("right", 2)));
+
+const massSagar = 70;
+const heightSagar = 1.5;
+const massSonu = 92;
+const heightSonu = 1.95;
+
+const BMISagar = massSagar / heightSagar ** 2;
+const BMISonu = massSonu / (heightSonu * heightSonu);
+const SagarHigherBMI = BMISagar > BMISonu;
+console.log(BMISagar, BMISonu, SagarHigherBMI);
