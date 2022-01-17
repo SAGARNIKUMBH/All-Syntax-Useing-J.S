@@ -854,12 +854,19 @@ console.log("calculateTotal: ", calculate(n));*/
 // console.log(echo("left", 6) ** echo("right", 2));
 // console.log(echo("left", 4) ** (echo("middle", 4) ** echo("right", 2)));
 
-const massSagar = 70;
-const heightSagar = 1.5;
-const massSonu = 92;
-const heightSonu = 1.95;
+// const massSagar = 70;
+// const heightSagar = 1.5;
+// const massSonu = 92;
+// const heightSonu = 1.95;
 
-const BMISagar = massSagar / heightSagar ** 2;
-const BMISonu = massSonu / (heightSonu * heightSonu);
-const SagarHigherBMI = BMISagar > BMISonu;
-console.log(BMISagar, BMISonu, SagarHigherBMI);
+// const BMISagar = massSagar / heightSagar ** 2;
+// const BMISonu = massSonu / (heightSonu * heightSonu);
+// const SagarHigherBMI = BMISagar > BMISonu;
+// console.log(BMISagar, BMISonu, SagarHigherBMI);
+
+// const money = "sar";
+// if (money) {
+//   console.log("don't spend time");
+// } else {
+//   console.log("you should get all ");
+// }
