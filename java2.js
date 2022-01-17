@@ -576,12 +576,249 @@
 12;
 1;
 
-let n = 5;
-let i = 1;
-let j = 1;
-for (i = 1; i < n; i++) {
-  for (j = 1; j <= n - i; j++) {
-    console.log(j + " ");
-  }
-  console.log(" ");
-}
+// let n = 5;
+// let i = 1;
+// let j = 1;
+// for (i = 1; i < n; i++) {
+//   for (j = 1; j <= n - i; j++) {
+//     console.log(j + " ");
+//   }
+//   console.log(" ");
+// }
+
+// --------------------------------------------------------------------------------------------------------------------
+
+// puzzle 06
+
+// *********
+// *
+// *
+// *
+// *********
+//         *
+//         *
+//         *
+// *********
+
+// let i = 0;
+// let j = 1;
+// let n = 09;
+
+// for (i = 0; i <= n; i++) {
+//   for (j = 1; j <= n - i; j++) {
+//     if (j <= n - i) {
+//       console.log("*");
+//     } else {
+//       console.log(" ");
+//     }
+//   }
+//   console.log(" ");
+// }
+
+// ------------------------------------------------------------------------------------------------
+
+// Puzzle No.07
+
+// *
+// **
+// ***
+// ****
+// *****
+// ****
+// ***
+// **
+// *
+// let i = 0;
+// let j = 0;
+// let n = 5;
+// for (i = 1; i < n; i++) {
+//   for (j = 0; j < i; j++) {
+//     console.log("*");
+//   }
+//   console.log("\n");
+// }
+// for (i = 1; i < n - 1; i++) {
+//   for (j = 0; j < n - i; j++) {
+//     console.log("*");
+//   }
+//   console.log("\n");
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// Puzzle No.08
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
+// let i = 1;
+// let j = 0;
+// let n = 5;
+// for (i = 0; i <= n; i++) {
+//   for (j = 0; j < n - i; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let z = 0; z < i; z++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+// for (i = 1; i <= n - 1; i++) {
+//   for (j = 0; j < i; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let z = 1; z <= n - i; z++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+
+// -----------------------------------------------------------------------------------------------------
+
+// Puzzle No.09
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+// let n = 5;
+// for (let i = 0; i <= n; i++) {
+//   for (let j = 0; j <= n - i; j++) {
+//     process.stdout.write(" "); // console operation work use this statements.
+//   }
+//   for (let t = 0; t < 2 * i - 1; t++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+
+// -------------------------------------------------------------------------------------------
+
+// Puzzle No.10
+
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+
+// let n = 5;
+// for (let i = 0; i <= n; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let g = 0; g < 2 * (n - i) - 1; g++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+
+// -------------------------------------------------------------------------------------------------------------
+
+// Puzzle No. 11
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+
+// let n = 5;
+// for (let i = 0; i <= n; i++) {
+//   for (j = n; j > i; j--) {
+//     process.stdout.write(" ");
+//   }
+//   for (let g = 0; g < i * 2 - 1; g++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+// for (let i = 1; i <= n - 1; i++) {
+//   for (let j = 0; j < i; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let t = (n - i) * 2 - 1; t > 0; t--) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+
+// --------------------------------------------------------------------------------------------------------
+
+// Puzzle No.12
+
+// *********
+// *******
+// *****
+// ***
+// *
+// ***
+// *****
+// *******
+// *********
+
+// let n = 5;
+// for (let i = 0; i < n; i++) {
+//   for (j = n; j < i; j) {
+//     process.stdout.write(" ");
+//   }
+//   for (g = 0; g < (n - i) * 2 - 1; g++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+// for (i = 2; i <= n; i++) {
+//   for (j = 0; j > i; j--) {
+//     process.stdout.write(" ");
+//   }
+//   for (t = 0; t < i * 2 - 1; t++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// Puzzle No.13
+
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+// let n = 5;
+// for (let i = 0; i < n; i++) {
+//   for (j = 0; j < i; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (g = 0; g < (n - i) * 2 - 1; g++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
+// for (i = 2; i <= n; i++) {
+//   for (j = n; j > i; j--) {
+//     process.stdout.write(" ");
+//   }
+//   for (t = 0; t < i * 2 - 1; t++) {
+//     process.stdout.write("*");
+//   }
+//   process.stdout.write("\n");
+// }
