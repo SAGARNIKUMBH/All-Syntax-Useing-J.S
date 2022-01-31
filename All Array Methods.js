@@ -181,3 +181,82 @@
 // console.log(letters.join("-"));
 
 // --------------------------------------------------------------------------------------------------------------
+
+// 12. forEach() Methods :-
+
+// Definition and Usage =>
+
+// The forEach() method calls a function for each element in an array.
+// The forEach() method is not executed for empty elements.
+
+// const cash = [1000, 5000, -1200, 15000, -8000, 100, -1200, 4141];
+
+// cash.forEach(function (cash) {
+//   if (cash > 0) {
+//     console.log(`Your Deposite Amt is ${cash}`);
+//   } else {
+//     console.log(`Your Withdrew Amt is ${Math.abs(cash)}`);
+//   }
+// });
+
+// -------------------------------------------------------------------------------------------------------
+
+// 13. Filter Methods :-
+
+// Definition and Usage =>
+
+// The filter() method creates a new array filled with elements that pass a test provided by a function.
+// The filter() method does not execute the function for empty elements.
+// The filter() method does not change the original array.
+
+// function Age(age) {
+//   return age >= 18;
+// }
+// function func() {
+//   let HigherAge = [24, 33, 16, 40].filter(Age);
+//   console.log(HigherAge);
+// }
+// func();
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// 14. Reduce Methods :-
+
+// Definition and Usage =>
+
+// The reduce() method executes a reducer function for array element.
+// The reduce() method returns a single value: the function's accumulated result.
+// The reduce() method does not execute the function for empty array elements.
+// The reduce() method does not change the original array.
+
+// const array1 = [1, 2, 3, 4];
+// const reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+// // 1 + 2 + 3 + 4
+// console.log(array1.reduce(reducer));
+// // expected output: 10
+
+// // 5 + 1 + 2 + 3 + 4
+// console.log(array1.reduce(reducer, 5));
+// // expected output: 15
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// 15 Find Methods :-
+
+// Definition and Usage =>
+
+// The find() method returns the value of the first element that passes a test.
+// The find() method executes a function for each array element.
+// The find() method retuns undefined if no elements are found.
+// The find() method does not execute the function for empty elements.
+// The find() method does not change the original array.
+
+// const array = [10, 20, 30, 40, 50];
+
+// let found = array.find(function (element) {
+//   return element > 30;
+// });
+// console.log(found);
+
+// -------------------------------------------------------------------------------------------------------------------
